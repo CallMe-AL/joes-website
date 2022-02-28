@@ -5,4 +5,4 @@ cascade:
   featured_image: "/images/gohugo-default-sample-hero-image.jpg"
 
 ---
-This is joe's blog yoooo
+This is joe's blog
