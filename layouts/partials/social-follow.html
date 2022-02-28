@@ -1,0 +1,14 @@
+{{ $socials := partialCached "func/socials/Get" "socials/Get" }}
+<div class="ananke-socials">
+  {{ range $socials }}
+    <a href="{{ .url }}" target="_blank" class="{{ .name }}  link-transition stackoverflow link dib z-999 pt0-l mr1-l" title="{{ .label }} link" rel="noopener" aria-label="follow on {{ .label }}——Opens in a new window">
+      {{ with .icon }}
+        <span class="icon">{{ . }}</span>
+      {{ else }}
+        {{ .label }}
+      {{ end }}
+      <!-- new window icon commented out in file -->
+      {{- partial "new-window-icon.html" . -}}
+    </a>
+  {{ end }}
+</div>

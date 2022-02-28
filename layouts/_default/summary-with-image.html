@@ -1,0 +1,29 @@
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+<article class="bb border-glowy-pink">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      {{ if $featured_image }}
+          {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+        {{ $featured_image := (trim $featured_image "/") | absURL }}
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="{{.RelPermalink}}" class="db grow">
+            <img src="{{ $featured_image }}" class="img br3" alt="image from {{ .Title }}">
+          </a>
+        </div>
+      {{ end }}
+      <div class="flex flex-column blah w-100{{ if $featured_image }} w-60-ns pl3-ns{{ end }}">
+        <h1 class="f3 fw1 athelas mt0 lh-title glowy-pink">
+          <a href="{{.RelPermalink}}" class="color-inherit dim link">
+            {{ .Title }}
+            </a>
+        </h1>
+        <div class="f6 f5-l min-h-100 lh-copy nested-copy-line-height nested-links white-60">
+          {{ .Summary }}
+        </div>
+          <span class="self-start-ns mt-auto"><a href="{{.RelPermalink}}" class="dib border-med-glowy-pink tracked bg-transparent br3 white-80 fw7 f7 hover--bg-glowy-pink link mt2 ph2 pv2">{{ $.Param "read_more_copy" | default (i18n "readMore") }}</a></span>
+        {{/* TODO: add author
+        <p class="f6 lh-copy mv0">By {{ .Author }}</p> */}}
+      </div>
+    </div>
+  </div>
+</article>
