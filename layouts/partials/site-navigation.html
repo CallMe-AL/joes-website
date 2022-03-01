@@ -21,8 +21,8 @@
         <ul class="pl0 flex flex-column">
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib mb4 {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active-tab-mobile{{ end }}">
-            <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n " pageTitle" . }}">
+          <li class="list f5 f4-ns fw4 dib mb4 ">
+            <a class="hover-white no-underline white-90 {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active-tab-mobile{{ end }}" href="{{ .URL }}" title="{{ i18n " pageTitle" . }}">
               {{ .Name }}
             </a>
           </li>
