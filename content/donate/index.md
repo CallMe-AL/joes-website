@@ -1,12 +1,11 @@
 ---
 title: "Donate"
 date: 2022-02-26T15:57:29-05:00
-draft: true
 description: "Like what you see? Buy me a beer, or something."
 featured_image: "/images/gohugo-default-sample-hero-image.jpg"
 menu:
   main:
-    weight: 15
+    weight: 5
 ---
 
 I write everything from scratch! I also pay for all the hosting and stuff you see here. Anything helps to keep my projects alive and going.

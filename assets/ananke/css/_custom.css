@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&family=Overpass:wght@200&family=Raleway:wght@300&family=Roboto&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
 /* colors */
 
 .active-tab {
@@ -80,7 +92,37 @@
 .hover--bg-glowy-pink:hover {
   transition: all 0.3s linear;
   color: rgba(255, 255, 255, 0.9);
-  background-color: #fa45d3;
+  background-color: #b3018c;
+}
+
+.hover--glowy-shadow {
+  /* transition: box-shadow 0.3s ease-in; */
+  box-shadow: 0 0 0px #ff00c8;
+  position: relative;
+}
+
+/* using an after effect because opacity only requires recompositing on most browsers */
+/* changing box-shadow requires repaint and recomposite */
+.hover--glowy-shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  /* important! otherwise edges poke out over posts */
+  border-radius: 0.5rem;
+
+  transition: opacity 0.3s ease-in;
+  box-shadow: 0 0 10px #ff00c8;
+
+  opacity: 0;
+}
+
+.hover--glowy-shadow:hover::after {
+  /* box-shadow: 0 0 10px #ff00c8; */
+  opacity: 1;
 }
 
 .markdown-links a {
@@ -96,12 +138,12 @@
 /* overwriting hugo's internal pagination styles */
 .pagination li a {
   border: 1px solid #b3018c;
-  background: transparent;
+  background-color: transparent;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .pagination li.active a {
-  background: #b3018c;
+  background-color: #b3018c;
 }
 
 /* other stuff */

@@ -6,7 +6,6 @@ featured_image: "/images/gohugo-default-sample-hero-image.jpg"
 menu:
   main:
     weight: 10
-draft: true
 ---
 
 This site is for all of joe's cool writings about sci-fi fantasy, futuristic, robots killing humans and humans killing robots madness. Dive in and enjoy!

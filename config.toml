@@ -32,6 +32,8 @@ enableRobotsTXT = true
   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
   custom_css = ["_custom.css"]
   show_reading_time = true
+  body_classes = "Raleway bg-off-black"
+  mainSections = ['posts']
 
 [module]
   [module.hugoVersion]
