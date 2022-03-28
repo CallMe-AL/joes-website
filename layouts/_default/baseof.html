@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
     <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="Sci-Fi dystopian writing madness.">
+    <meta property="og:description" content="Sci-Fi dystopian writing madness.">
+    <meta property="og:image" content="static\images\gohugo-default-sample-hero-image.jpg">
+    <meta property="og:image:alt" content="sample main page image">
+    <meta property="og:title" content="Frontend Mentor Todo-App by @CallMe-Al">
+    <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ hugo.Generator }}

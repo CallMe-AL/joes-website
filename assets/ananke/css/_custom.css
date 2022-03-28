@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&family=Overpass:wght@200&family=Raleway:wght@300&family=Roboto&display=swap");
 
+:root {
+  --main-pink: #ff00c8;
+  --secondary-pink: #db34b7;
+  --tertiary-pink: #c20198;
+  --border-pink: #b3018c;
+  --hover-pink: #fa45d3;
+  --link-hover-pink: #ff7ce3;
+  --mobile-menu-bg: #1e1c21;
+  --main-bg-color: #1e1c21;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -13,7 +24,7 @@ h3 {
 /* colors */
 
 .active-tab {
-  color: #ff00c8;
+  color: var(--main-pink);
   position: relative;
 }
 
@@ -24,7 +35,7 @@ h3 {
   left: 0;
   width: calc(100% - 16px);
   height: 3px;
-  background-color: #ff00c8;
+  background-color: var(--main-pink);
 }
 
 .active-tab-mobile {
@@ -38,50 +49,50 @@ h3 {
   left: 0px;
   height: 3px;
   width: 100%;
-  background-color: #ff00c8;
+  background-color: var(--main-pink);
 }
 
 .bg-off-black {
-  background-color: #1e1c21;
+  background-color: var(--main-bg-color);
 }
 
 .glowy-pink {
-  color: #ff00c8;
+  color: var(--main-pink);
 }
 
 .glowy-pink-2 {
-  color: #db34b7;
+  color: var(--secondary-pink);
 }
 
 .glowy-pink-3 {
-  color: #c20198;
+  color: var(--tertiary-pink);
 }
 
 .to-glowy-pink:hover {
   transition: all 0.3s linear;
-  color: #ff00c8;
+  color: var(--main-pink);
 }
 
 .border-glowy-pink {
-  border-color: #b3018c;
+  border-color: var(--border-pink);
 }
 
 .border-small-glowy-pink {
-  border: 1px solid #b3018c;
+  border: 1px solid var(--border-pink);
 }
 
 .border-med-glowy-pink {
-  border: 2px solid #b3018c;
+  border: 2px solid var(--border-pink);
 }
 
 .bg-glowy-pink {
-  background-color: #ff00c8;
+  background-color: var(--main-pink);
 }
 
 .bg-glowy-pink:hover {
   transition: all 0.3s linear;
   color: rgba(255, 255, 255, 0.9);
-  background-color: #fa45d3;
+  background-color: var(--hover-pink);
 }
 
 .hover--bg-glowy-pink {
@@ -91,12 +102,12 @@ h3 {
 .hover--bg-glowy-pink:hover {
   transition: all 0.3s linear;
   color: rgba(255, 255, 255, 0.9);
-  background-color: #b3018c;
+  background-color: var(--border-pink);
 }
 
 .hover--glowy-shadow {
   /* transition: box-shadow 0.3s ease-in; */
-  box-shadow: 0 0 0px #ff00c8;
+  box-shadow: 0 0 0px var(--main-pink);
   position: relative;
 }
 
@@ -115,7 +126,7 @@ h3 {
   border-radius: 0.5rem;
 
   transition: opacity 0.3s ease-in;
-  box-shadow: 0 0 10px #ff00c8;
+  box-shadow: 0 0 10px var(--main-pink);
 
   opacity: 0;
 }
@@ -126,24 +137,24 @@ h3 {
 }
 
 .markdown-links a {
-  color: #db34b7;
+  color: var(--secondary-pink);
   transition: all 0.3s linear;
   text-decoration: none;
 }
 
 .markdown-links a:hover {
-  color: #ff7ce3;
+  color: var(--link-hover-pink);
 }
 
 /* overwriting hugo's internal pagination styles */
 .pagination li a {
-  border: 1px solid #b3018c;
+  border: 1px solid var(--border-pink);
   background-color: transparent;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .pagination li.active a {
-  background-color: #b3018c;
+  background-color: var(--border-pink);
 }
 
 /* other stuff */
@@ -169,18 +180,32 @@ h3 {
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  background-color: #ff00c8;
+  background-color: var(--main-pink);
   border: none;
   transition: all 0.3s linear;
 
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 30px;
+  right: 30px;
   z-index: 8;
 
   color: rgba(255, 255, 255, 0.8);
 
   display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .back-to-top-btn {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 775px) {
+  .back-to-top-btn {
+    bottom: 50px;
+    right: 50px;
+  }
 }
 
 .back-to-top-btn.show {
@@ -260,8 +285,7 @@ header div nav div .mobile-menu {
   z-index: 900;
 
   /* background-color: #a4a4a4; */
-  background-color: #1e1c21;
-  color: black;
+  background-color: var(--mobile-menu-bg);
   display: flex;
   flex-direction: column;
   gap: 25px;
