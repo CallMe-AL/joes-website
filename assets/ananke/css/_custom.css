@@ -181,10 +181,9 @@ h3 {
 
 .inline-svg {
   display: inline-block;
-  /* width: 1.5em;
-  height: 1.5em; */
-  /* top: -4px; */
-  top: 2px;
+  width: 1.5em;
+  height: 1.5em;
+  top: -4px;
   position: relative;
 }
 
