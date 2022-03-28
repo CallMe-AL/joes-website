@@ -21,6 +21,18 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
+.top-2_2 {
+  top: 2.2rem;
+}
+
+.post-card {
+  cursor: pointer;
+}
+
+.post-card:hover .main-post-card-link {
+  color: var(--hover-pink);
+}
+
 /* colors */
 
 .active-tab {
@@ -146,15 +158,15 @@ h3 {
   color: var(--link-hover-pink);
 }
 
-/* overwriting hugo's internal pagination styles */
-.pagination li a {
-  border: 1px solid var(--border-pink);
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.9);
+/*** overwriting hugo's internal pagination styles ***/
+.pagination .page-item a {
+  border: 1px solid var(--border-pink) !important;
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.pagination li.active a {
-  background-color: var(--border-pink);
+.pagination .page-item.active a {
+  background-color: var(--border-pink) !important;
 }
 
 /* other stuff */
@@ -169,8 +181,8 @@ h3 {
 
 .inline-svg {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 1.5em;
+  height: 1.5em;
   top: -4px;
   position: relative;
 }

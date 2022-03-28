@@ -4,6 +4,27 @@ const hamMenu = document.querySelector('.menu-container');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuOverlay = document.querySelector('.menu-overlay');
 
+// post card variables
+const postCard = [...document.querySelectorAll('.post-card')];
+
+postCard.forEach(card => {
+  // *** NOTE FOR FUTURE SELF *** 
+  // if adding more links within cards in future, will need to prevent double event triggering
+  // see below:
+  // https://css-tricks.com/block-links-the-search-for-a-perfect-solution/#method-4-sprinkle-javascript-on-the-second-method
+  //  
+  // 
+  const mainLink = card.querySelector('.main-post-card-link');
+
+  card.addEventListener('click', (e) => {
+    const isTextSelected = window.getSelection().toString();
+    if (!isTextSelected) {
+      // bubbles up to card and fires click event on the link
+      mainLink.click();
+    }
+  });
+});
+
 hamMenu.addEventListener('click', () => {
   if (!hamMenu.classList.contains('close')) {
     hamMenu.classList.add('close');
