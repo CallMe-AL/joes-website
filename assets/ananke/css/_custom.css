@@ -81,7 +81,7 @@ h3 {
 }
 
 .to-glowy-pink:hover {
-  transition: all 0.3s linear;
+  transition: color 0.3s ease-in;
   color: var(--main-pink);
 }
 
@@ -112,7 +112,7 @@ h3 {
 }
 
 .hover--bg-glowy-pink:hover {
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in;
   color: rgba(255, 255, 255, 0.9);
   background-color: var(--border-pink);
 }
@@ -222,8 +222,9 @@ h3 {
 
 .back-to-top-btn.show {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 
 .back-to-top-btn:hover {
