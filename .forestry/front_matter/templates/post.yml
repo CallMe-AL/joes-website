@@ -18,6 +18,7 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/beep-boop-bop.md
 - content/posts/my-post.md
 - content/posts/test-post.md
 - content/posts/this-is-my-first-post-to-netlify.md
