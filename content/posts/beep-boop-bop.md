@@ -1,7 +1,6 @@
 +++
 date = 2022-03-29T23:32:00Z
 description = "Bop boop boop beep"
-draft = true
 featured_image = ""
 tags = []
 title = "Beep boop bop"
