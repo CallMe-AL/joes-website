@@ -19,5 +19,4 @@ fields:
   label: tags
 pages:
 - content/posts/beep-boop-bop.md
-- content/posts/my-post.md
 - content/posts/test-post.md
