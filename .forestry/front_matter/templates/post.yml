@@ -17,3 +17,6 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- content/posts/beep-boop-bop.md
+- content/posts/test-post.md
