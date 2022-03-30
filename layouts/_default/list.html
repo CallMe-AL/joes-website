@@ -5,7 +5,7 @@
     </section>
     <section class="flex-ns flex-wrap justify-around mt5">
       {{ range .Paginator.Pages }}
-        <div class="post-card relative w-100 w-30-l mb4 bg-transparent br3 hover--glowy-shadow border-small-glowy-pink">
+        <div class="post-card relative w-100 w-30-l mb4 bg-transparent br3">
           {{ .Render "summary" }}
         </div>
       {{ end }}

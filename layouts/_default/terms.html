@@ -5,11 +5,11 @@
       {{ .Content }}
     </div>
   </article>
-  <div class="mw8 center">
+  <div class="mw8 center pb6">
     <section class="ph4">
       {{ range $key, $value := .Data.Terms }}
-        <h2 class="f1">
-          <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}" class="link blue hover-black">
+        <h2 class="f1 markdown-links">
+          <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}" class="link ">
             {{ $.Data.Singular | humanize }}: {{ $key }}
           </a>
         </h2>

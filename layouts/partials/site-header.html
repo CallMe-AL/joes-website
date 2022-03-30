@@ -9,6 +9,13 @@
         <h1 class="f2 f-subheadline-l fw2 glowy-pink mb0 lh-title">
           {{ .Title | default .Site.Title }}
         </h1>
+        <!-- {{ if .Site.Params.pre_order }}
+          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
+            <a class="fw1 f5 f3-l white-80 measure-wide-l center mt3" href="{{ .Site.Params.pre_order }}">
+            {{ .Params.description }}
+            </a>
+          </h2>
+        {{ end }} -->
         {{ with .Params.description }}
           <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
             {{ . }}
