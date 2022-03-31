@@ -11,6 +11,10 @@
   --main-bg-color: #1e1c21;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -146,6 +150,23 @@ h3 {
 .hover--glowy-shadow:hover::after {
   /* box-shadow: 0 0 10px #ff00c8; */
   opacity: 1;
+}
+
+/* *** links *** */
+
+.pre-order-link {
+  border: 2px solid var(--border-pink);
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+  /* text-shadow: 0px 0px 10px var(--border-pink); */
+  background-color: var(--border-pink);
+}
+
+.pre-order-link:hover {
+  background-color: rgba(179, 1, 140, 0.3);
 }
 
 .markdown-links a {
