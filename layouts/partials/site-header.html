@@ -7,13 +7,13 @@
       {{ partial "site-navigation.html" .}}
       <div class="tc-l pv4 pv6-l  ph3 ph4-ns">
         
-        {{ if .Site.Params.pre_order }}
+        {{ if .Params.pre_order }}
         <h1 class="f2 f-subheadline-l fw2 glowy-pink mb0 lh-title">
-          {{ .Site.Params.pre_order_title | default .Site.Title }}
+          {{ .Params.title | default .Site.Title }}
         </h1>
-        <p class="fw4 white-80 mb4 mb5-l mt3 lh-copy f5 f4-l">{{ .Site.Params.pre_order_desc }}</p>
+        <p class="fw4 white-80 mb4 mb5-l mt3 lh-copy f5 f4-l">{{ .Params.pre_order_desc }}</p>
         <a class="db pre-order-link pa2 pa3-l bg-transparent fw1 f5 f3-l white-80 measure-wide-l center-l mt3"
-          href="{{ .Site.Params.pre_order }}">Pre-order now
+          href="{{ .Params.pre_order_url }}">Pre-order now
           <!-- {{ .Params.description }} -->
         </a>
           <!-- <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
