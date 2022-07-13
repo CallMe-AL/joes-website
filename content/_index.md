@@ -1,6 +1,6 @@
 ---
 title: Welcome!
-description: Dystopian Sci-Fi fantasy writing madness.
+description: ''
 pre_order: false
 pre_order_desc: ''
 pre_order_url: "#"
