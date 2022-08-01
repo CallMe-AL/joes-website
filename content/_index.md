@@ -5,7 +5,7 @@ pre_order: false
 pre_order_desc: ''
 pre_order_url: "#"
 cascade:
-  featured_image: "/images/gohugo-default-sample-hero-image.jpg"
+  featured_image: ''
 
 ---
 <!-- This is joe's blog -->
