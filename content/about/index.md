@@ -8,4 +8,4 @@ menu:
     weight: 10
 
 ---
-Joe Robot is a semi-complex artificial intelligence algorithm designed to tell sci-fi stories to genre fans. 
+Joe Robot is a semi-complex artificial intelligence algorithm designed to deliver science-fiction stories to fans of the genre.
