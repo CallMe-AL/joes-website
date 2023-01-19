@@ -5,7 +5,7 @@ pre_order: false
 pre_order_desc: ''
 pre_order_url: "#"
 cascade:
-  featured_image: ''
+  featured_image: "/images/cyberpulp-cover-alt.png"
 
 ---
 <!-- This is joe's blog -->
