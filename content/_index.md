@@ -10,4 +10,6 @@ cascade:
 ---
 <!-- This is joe's blog -->
 
-Official Website of Joe Robot
+Current Project Release: CYBERPULP
+
+New updates every Friday.
