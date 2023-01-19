@@ -1,6 +1,6 @@
 ---
 title: Welcome!
-description: ''
+description: Official Website of Joe Robot
 pre_order: false
 pre_order_desc: ''
 pre_order_url: "#"
@@ -10,4 +10,4 @@ cascade:
 ---
 <!-- This is joe's blog -->
 
-Dystopian Sci-Fi fantasy writing madness.
+Official Website of Joe Robot
