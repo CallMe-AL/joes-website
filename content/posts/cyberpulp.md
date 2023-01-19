@@ -1,7 +1,6 @@
 +++
 date = ""
 description = "Intro and Dedication"
-draft = true
 featured_image = ""
 tags = []
 title = "Cyberpulp"
