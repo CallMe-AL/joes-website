@@ -3,7 +3,7 @@ date = ""
 description = "Intro and Dedication"
 featured_image = ""
 tags = []
-title = "CYBERPULP: Chapter 0 - Introduction"
+title = "CYBERPULP: Introduction"
 
 +++
 This book is dedicated to:
