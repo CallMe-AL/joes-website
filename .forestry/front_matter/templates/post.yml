@@ -19,5 +19,6 @@ fields:
   label: tags
 pages:
 - content/posts/cyberpulp-chapter-one.md
+- content/posts/cyberpulp-chapter-three.md
 - content/posts/cyberpulp-chapter-two.md
 - content/posts/cyberpulp.md
